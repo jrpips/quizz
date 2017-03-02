@@ -1,0 +1,130 @@
+/* *
+ *
+ *  quizz.css
+ * 
+ * */
+
+body{
+    margin:0;
+    padding:0;              
+    background-color:rgb(240,240,250);
+    color:rgb(50,50,50);
+    font-family:serif,arial;
+}
+h1{
+    text-align:center;
+    font-size:18px;
+    font-style: italic;
+    text-transform: uppercase;                
+}
+#conteneur{
+    width:50%;
+    min-height:129px;
+    margin:0 auto 10px;
+    padding:20px;            
+    border-radius:5px;
+    border:1px solid gray;                         
+    position:relative;
+    background-color:white;
+    color:inherit;
+}
+#result{
+    width:50%;
+    margin:auto;            
+    position:relative;
+}
+.hidden{
+    visibility:hidden;
+}  
+span{
+    position:absolute;
+    right:0;
+    top:0;
+}
+[type=button]{
+    padding:2px 7px;
+    border:1px solid white; 
+    border-radius:5px;
+    background-color: rgb(50,80,255);
+    color:white;             
+}
+#first{
+    font-size:18px;
+    font-weight:bold;
+}
+label:not(#first){
+    display:inline-block;
+    margin:15px 0 0 25px;
+    font-style: italic;
+}
+img{
+    width:5%;
+    position:absolute;
+    right:10px;
+    bottom:10px;
+}
+form{
+    width:22%;
+}
+/*jauge*/
+form,#jauge,.echelon{
+    display:inline-block;
+}
+#jauge{
+    width:110px;
+    margin-left:25px;
+    padding:0;
+    vertical-align:middle;
+}
+.echelon{             
+    width:15px;
+    height:15px;
+    margin:2px;
+    border:1px solid gray;              
+    border-radius:2px;
+    background-color:white;
+    color:inherit;
+}
+/*loaderAjax*/
+.loader {
+    border-radius:50%;
+    background-color: black;
+    width: 10px;
+    height: 10px;             
+    margin-left:5px;
+    float: left;
+    opacity: 0.1;
+    transform: scale(0.7);
+    animation: loading 1s infinite linear;
+}
+#contentLoader{
+    width:75px;
+    position: absolute;
+    left:45%;
+    top:45%;
+}
+#block_1 {
+    animation-delay: .3s;  
+}
+#block_2 {
+    animation-delay: .2s;
+}
+#block_3 {
+    animation-delay: .3s;
+}
+#block_4 {
+    animation-delay: .4s;
+}
+#block_5 {
+    animation-delay: .4s;
+}
+@keyframes loading {
+    0% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.7);
+        opacity: 0.1;
+    }
+}
